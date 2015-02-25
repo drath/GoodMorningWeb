@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+
+  # This declares the post resource and makes it the default root of the app
+  resources :posts, :path => '/'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
