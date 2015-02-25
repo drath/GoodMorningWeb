@@ -23,6 +23,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'redcarpet', '~> 3.0.0'
 gem 'pygments.rb'
+gem 'gcm'
 
 group :development do
 	gem 'spring'
