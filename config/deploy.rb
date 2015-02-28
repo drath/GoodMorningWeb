@@ -21,7 +21,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      execute "/home/deployer/apps/GoodMorningWeb/current/config/unicorn_init.sh restart"
+      execute "cd #{current_path} && ./config/unicorn_init.sh restart"
       # execute "/home/deployer/apps/GoodMorningWeb/current/config/unicorn_init.sh stop"
       # execute "/home/deployer/apps/GoodMorningWeb/current/config/unicorn_init.sh start"
     end
