@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   # This declares the post resource and makes it the default root of the app
   resources :posts, :path => '/'
 
