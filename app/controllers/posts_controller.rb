@@ -11,7 +11,6 @@ class PostsController < ApplicationController
 		    logger.debug key 
 		    logger.debug value
 		end
-		logg
 		render :text => "WWWWWResponse is............" + response[:response] 
 	end
 end
