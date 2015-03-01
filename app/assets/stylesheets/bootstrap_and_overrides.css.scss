@@ -1,0 +1,6 @@
+@import "bootstrap";
+
+// Fix: http://stackoverflow.com/questions/18245575/bootstrap-3-unable-to-display-glyphicon-properly
+// TBD: To improve performance, this should be downloaded to app
+// Download location: ~/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
